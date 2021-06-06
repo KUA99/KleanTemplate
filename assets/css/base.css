@@ -7,10 +7,15 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.full {
+    width: 100%;
 }
 
 .grid {
-    width: 1200px;
+    width: 1100px;
     max-width: 100%;
     margin: 0 auto;
 }

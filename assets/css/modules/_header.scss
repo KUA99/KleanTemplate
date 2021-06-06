@@ -1,0 +1,57 @@
+@import "variables";
+@import "general";
+
+header {
+    border: 0.3rem solid $header-border;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+    .header-left {
+        display: inherit;
+    }
+}
+
+.header__logo img {
+    display: block;
+    margin-right: 3rem;
+}
+
+.nav__list {
+    list-style-type: none;
+    .nav__item {
+        display: inline-block;
+        padding: 0.8rem;
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $nav-color;
+            line-height: 1.6rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.account button {
+    font-size: 1.6rem;
+    color: $nav-button-color;
+    padding: 0.8rem 2.4rem;
+    font-weight: 600;
+    border: 0.1rem solid $white-color;
+    border-radius: 0.6rem;
+    text-transform: capitalize;
+    background-color: $nav-signup-button-background-color;
+    &:first-child {
+        background-color: $white-color;
+        border-color: $white-color;
+    }
+    &:last-child {
+        box-shadow: 0px 0.4375rem 1.25rem #888888;
+    }
+}
+
+.account__sign-up span {
+    display: inline;
+}
