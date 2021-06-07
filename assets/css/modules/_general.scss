@@ -1,5 +1,7 @@
+@import "variables";
+
 .text-gradient {
-    background: linear-gradient(50deg, #c381db, #4e92f9);
+    background: linear-gradient(50deg, $text-gradient-color-1, $text-gradient-color-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
