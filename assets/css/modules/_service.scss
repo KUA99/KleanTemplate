@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+@import "general";
+
+
+.service {
+    margin-top: 12rem;
+}
+
+.service__content {
+    .service-title {
+        width: 60rem;
+        margin: 0 auto;
+        text-align: center;
+        @include title-content;
+    }
+}
+
+.service-column {
+    width: 80rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    .service-column-image {
+        text-align: center;
+        img {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}
+
+.service-column-content {
+    padding: 1.6rem;
+    h1 {
+        color: $component-title-color;
+    }
+    p {
+        font-size: 1.6rem;
+        color: $intro-p-color;
+        text-align: left;
+        margin-top: 1.2rem;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: $intro-span-color;
+        font-weight: 600;
+        display: block;
+        margin-top: 2.4rem;
+    }
+}
+
+.service-item {
+    .service-card {
+        border: 0.2rem solid $white-color;
+        border-radius: 4rem;
+        padding: 2.88rem 1.6rem 0 1.6rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 38rem;
+    }
+}
+

@@ -1,0 +1,59 @@
+@import "variables";
+
+@mixin button-gradient {
+        font-size: 1.6rem;
+        padding: 1.2rem 2.4rem;
+        border: 0.1rem solid $white-color;
+        border-radius: 0.6rem;
+        background: linear-gradient(50deg, $text-gradient-color-1, $text-gradient-color-2);
+        color: $white-color;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+}
+
+@mixin button-hover {
+        transform: translateY(-0.125rem);
+        box-shadow: 0.5rem 0.5rem 1.8rem rgba(238, 107, 250, 0.4);
+        background-color: #EE6BFA;
+}
+
+@mixin title-content {
+        h1 {
+                font-size: 4rem;
+                font-weight: bold;
+                color: $component-title-color;
+                margin-bottom: 2rem;
+            }
+            p {
+                font-size: 1.6rem;
+                color: $intro-p-color;
+                span {
+                    font-weight: bold;
+                }
+            }        
+}
+
+@mixin button-gradient-border {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 1.12rem 2.88rem;
+        position: relative;
+        border-radius: 0.8rem;
+        border-color: #eaeefd;
+        background-color: #eaeefd;
+        cursor: pointer;
+        .button-gradient {
+            width: 106.8%;
+            height: 121.6%;
+            background: linear-gradient(50deg, $text-gradient-color-1, $text-gradient-color-2);
+            position: absolute;
+            top: -0.5rem;
+            left: -0.5rem;
+            right: -1rem;
+            bottom: 3rem;
+            z-index: -1;
+            border-radius: 0.8rem;
+        }
+}

@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixins";
+
+
+.project {
+    margin-top: 12rem;
+}
+
+.project-title {
+    padding-bottom: 6rem;
+    width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    @include title-content;
+}
+
+.project-show {
+    padding: 1.6rem;
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:  
+    "h1 h2 h3"
+    "h4 h2 h5"
+    "h4 h6 h5";
+    grid-row-gap: 1.6rem;
+    grid-column-gap: 3.2rem;
+}
+
+.show-item:first-child {
+    grid-area: h1;
+}
+
+.show-item:nth-child(2) {
+    grid-area: h2;
+}
+
+.show-item:nth-child(3) {
+    grid-area: h3;
+}
+
+.show-item:nth-child(4) {
+    grid-area: h4;
+}
+
+.show-item:nth-child(5) {
+    grid-area: h6;
+}
+
+.show-item:nth-child(6) {
+    grid-area: h5;
+}
+
+.show-item img {
+    width: 100%;
+}
+
+.project-button {
+    width: 110rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+    text-align: center;
+    button {
+        @include button-gradient-border;
+    }
+}
